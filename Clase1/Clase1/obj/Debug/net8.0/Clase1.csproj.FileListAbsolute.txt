@@ -12,3 +12,4 @@ C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-2\Programacion-2-ORT\Clase
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-2\Programacion-2-ORT\Clase1\Clase1\obj\Debug\net8.0\Clase1.pdb
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-2\Programacion-2-ORT\Clase1\Clase1\obj\Debug\net8.0\Clase1.genruntimeconfig.cache
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-2\Programacion-2-ORT\Clase1\Clase1\obj\Debug\net8.0\ref\Clase1.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-2\Programacion-2-ORT\Clase1\Clase1\obj\Debug\net8.0\Clase1.sourcelink.json
