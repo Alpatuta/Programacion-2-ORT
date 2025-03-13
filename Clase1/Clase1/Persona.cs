@@ -7,16 +7,20 @@ using System.Threading.Tasks;
 namespace Clase1
 {
 
-        public class Persona
-        {
-            private string _nombre;
-            private string _apellido;
+    public class Persona
+    {
+        private string _nombre;
+        private string _apellido;
 
-            public Persona(string nombre, string apellido)
-            {
-                _nombre = nombre;
-                _apellido = apellido;
-            }
+        public Persona(string nombre, string apellido)
+        {
+            _nombre = nombre;
+            _apellido = apellido;
         }
-    
-}
+        
+        
+        public string ObtenerNombre()
+        {
+            return _nombre;
+        }
+}   }
