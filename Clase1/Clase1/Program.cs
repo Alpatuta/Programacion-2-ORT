@@ -20,6 +20,7 @@
                 _personas[0] = persona;
                 Console.WriteLine(nombre + "-" + apellido);
             }
+          
         }
     }
 }
