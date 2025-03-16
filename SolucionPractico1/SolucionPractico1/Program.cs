@@ -6,8 +6,9 @@
         {
             //Ejercicio1();
             //Ejercicio2();
-            Ejercicio3();
+            //Ejercicio3();
             //Ejercicio4();
+            Ejercicio5();
         
         }
 
@@ -105,25 +106,48 @@
             Console.WriteLine("Ingrese un valor");
             int.TryParse(Console.ReadLine(), out int valor);
 
-            while (primerNumero < segundoNumero && primerNumero != 0)
+            while (primerNumero < segundoNumero && primerNumero != 0 && segundoNumero != 0 && valor != 0)
             {
-                for(int i =0; i < segundoNumero; i++)
+                for(int i = primerNumero; i < segundoNumero; i++)
                 {
                     if (i == valor)
                     {
                         Console.WriteLine("El valor esta comprendido entre los numeros");
-                    }
-
-                    if(i != valor)
-                    {
-                        Console.WriteLine("El valor no esta comprendido entre los numeros");
                     }
                     
                 }
 
                 Console.WriteLine("Ingrese el primer numero");
                 int.TryParse(Console.ReadLine(), out primerNumero);
+
+                Console.WriteLine("Ingrese el segundo numero");
+                int.TryParse(Console.ReadLine(), out segundoNumero);
+
+                Console.WriteLine("Ingrese un valor");
+                int.TryParse(Console.ReadLine(), out valor);
             }
+        }
+
+        // Ejercicio 5
+
+        static void Ejercicio5()
+        {
+            Console.WriteLine("Ingrese un numero");
+            int.TryParse(Console.ReadLine(), out int numero);
+
+            int suma = 0;
+            int numeroNuevo = 0;
+
+            while (numero != 0)
+            {
+                suma = numeroNuevo + numero;
+                numeroNuevo += numero;
+
+                Console.WriteLine("Ingrese un numero");
+                int.TryParse(Console.ReadLine(), out numero);
+            }
+
+            Console.WriteLine(suma);
         }
     }
 }
