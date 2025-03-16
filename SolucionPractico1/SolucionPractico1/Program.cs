@@ -8,7 +8,8 @@
             //Ejercicio2();
             //Ejercicio3();
             //Ejercicio4();
-            Ejercicio5();
+            //Ejercicio5();
+            Ejercicio6();
         
         }
 
@@ -149,5 +150,21 @@
 
             Console.WriteLine(suma);
         }
+
+        // Ejercicio 6
+
+        //static void Ejercicio6()
+        //{
+        //    Console.WriteLine("Ingrese una palabra");
+        //    string palabra = Console.ReadLine();
+        //    int contadorVocales = 0;
+        //    int i = 0;
+            
+        //    while(palabra.Trim() != "" && i < palabra.Length)
+        //    {
+                
+        //        i++;
+        //    }
+        //}
     }
 }
