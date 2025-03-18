@@ -9,7 +9,7 @@
             //Ejercicio3();
             //Ejercicio4();
             //Ejercicio5();
-            Ejercicio6();
+            //Ejercicio6();
         
         }
 
@@ -151,20 +151,24 @@
             Console.WriteLine(suma);
         }
 
-        // Ejercicio 6
+        //Ejercicio 6
 
-        //static void Ejercicio6()
-        //{
-        //    Console.WriteLine("Ingrese una palabra");
-        //    string palabra = Console.ReadLine();
-        //    int contadorVocales = 0;
-        //    int i = 0;
+        static void Ejercicio6()
+        {
+            Console.WriteLine("Ingrese una palabra");
+            string palabra = Console.ReadLine();
+            string palabraMin = palabra.ToLower();
+            int contadorVocales = 0;
             
-        //    while(palabra.Trim() != "" && i < palabra.Length)
-        //    {
-                
-        //        i++;
-        //    }
-        //}
+            for (int i = 0; i < palabraMin.Length; i++)
+            {
+                if (palabraMin[i] == 'a' || palabraMin[i] == 'e' || palabraMin[i] == 'i' || palabraMin[i] == 'o'|| palabraMin[i] == 'u')
+                {
+                    contadorVocales++;
+                }
+            }
+
+            Console.WriteLine("Cantidad de vocales: " +  contadorVocales);
+        }
     }
 }

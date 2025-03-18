@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj": {}
+    "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj",
         "projectName": "SolucionPractico1",
-        "projectPath": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj",
-        "packagesPath": "C:\\Users\\alumnoFI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\SolucionPractico1\\SolucionPractico1\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\SolucionPractico1\\SolucionPractico1\\SolucionPractico1.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\SolucionPractico1\\SolucionPractico1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alumnoFI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,13 +34,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
