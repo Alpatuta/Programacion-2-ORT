@@ -10,6 +10,8 @@
             //Ejercicio4();
             //Ejercicio5();
             //Ejercicio6();
+            //Ejercicio7();
+            Ejercicio8();
         
         }
 
@@ -169,6 +171,45 @@
             }
 
             Console.WriteLine("Cantidad de vocales: " +  contadorVocales);
+        }
+
+        //Ejercicio 7
+
+        static void Ejercicio7()
+        {
+            Console.WriteLine("Ingrese una palabra");
+            string palabra = Console.ReadLine();
+ 
+
+            Console.WriteLine($"Palabra dada vuelta: {DarVuelta(palabra)}");
+
+        }
+
+        static string DarVuelta(string palabraVuelta)
+        {
+            string nuevaPalabra = "";
+            
+            for (int i = palabraVuelta.Length - 1; i >= 0; i--)
+            {
+                nuevaPalabra += palabraVuelta[i];
+            }
+
+            return nuevaPalabra;
+        }
+
+        static void Ejercicio8()
+        {
+            Console.WriteLine("Ingrese una palabra");
+            string palabra = Console.ReadLine();
+
+            if(palabra.ToLower() == DarVuelta(palabra.ToLower()))
+            {
+                Console.WriteLine("La palabra es palíndroma");
+            }
+            else
+            {
+                Console.WriteLine("La palabra no es palínodroma");
+            }
         }
     }
 }
