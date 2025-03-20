@@ -1,0 +1,15 @@
+D:\Prog-2\Practico-2\Practico-2\bin\Debug\net8.0\Practico-2.exe
+D:\Prog-2\Practico-2\Practico-2\bin\Debug\net8.0\Practico-2.deps.json
+D:\Prog-2\Practico-2\Practico-2\bin\Debug\net8.0\Practico-2.runtimeconfig.json
+D:\Prog-2\Practico-2\Practico-2\bin\Debug\net8.0\Practico-2.dll
+D:\Prog-2\Practico-2\Practico-2\bin\Debug\net8.0\Practico-2.pdb
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.AssemblyInfoInputs.cache
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.AssemblyInfo.cs
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.csproj.CoreCompileInputs.cache
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.sourcelink.json
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.dll
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\refint\Practico-2.dll
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.pdb
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\Practico-2.genruntimeconfig.cache
+D:\Prog-2\Practico-2\Practico-2\obj\Debug\net8.0\ref\Practico-2.dll
