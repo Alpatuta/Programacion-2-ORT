@@ -32,10 +32,18 @@ namespace Practico_2
             set { _matricula = value; }
         }
 
-        public bool ExoneraImpuestos
+        public string ExoneraImpuestos
         {
-            get { return _exoneraImpuestos; }
-            set { _exoneraImpuestos = value; }
+            get 
+            {
+                if (_exoneraImpuestos)
+                {
+                    return "Si";
+                }
+
+                return "No";
+            }
+           
         }
 
         public int Anio
@@ -101,7 +109,7 @@ namespace Practico_2
             return $"Marca: {_marca} \n" + 
                 $"Modelo: {_modelo} \n" + 
                 $"Matricula: {_matricula} \n" + 
-                $"Exonera impuestos: {_exoneraImpuestos} \n" +
+                $"Exonera impuestos: {ExoneraImpuestos} \n" +
                 $"Año: {_anio} \n" + 
                 $"Patente: {CalcularPatente()}";
         }
