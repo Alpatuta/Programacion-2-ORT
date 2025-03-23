@@ -85,7 +85,7 @@ namespace Practico_2
             ValidarMarca();
         } 
 
-        public int CalcularPatente()
+        private int CalcularPatente()
         {
             int patente = 0;
 
