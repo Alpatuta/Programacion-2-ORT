@@ -6,6 +6,7 @@
         {
             //Ejercicio1();
             //Ejercicio2();
+            Ejercicio3();
         }
 
         //Ejercicio 1
@@ -73,6 +74,33 @@
             empleado.Calcular();
             Console.WriteLine(empleado.DevolverDatos());
 
+        }
+
+        static void Ejercicio3()
+        {
+            Console.WriteLine("Ingrese id: ");
+            int.TryParse(Console.ReadLine(), out int id);
+
+            Console.WriteLine("Ingrese la fecha: ");
+            DateTime.TryParse(Console.ReadLine(), out DateTime fechaConsulta);
+
+            Console.WriteLine("Ingrese el lugar: ");
+            string lugar = Console.ReadLine();
+
+            Console.WriteLine("Ingrese su cedula: ");
+            string cedula = Console.ReadLine();
+
+            Console.WriteLine("Ingrese si es urgente o no. Datos validos: Si/No");
+            string urgente = Console.ReadLine();
+            bool esUrgente = false;
+
+            if(urgente == "Si")
+            {
+                esUrgente = true;
+            }
+
+            CitaMedica citaMedica = new CitaMedica(id, fechaConsulta, lugar, cedula, esUrgente);
+            Console.WriteLine(citaMedica.MostrarDatos());
         }
     }
 }
