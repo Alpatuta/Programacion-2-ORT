@@ -12,7 +12,7 @@ namespace Practico_2
         private DateTime _fecha;
         private string _lugar;
         private string _cedula;
-        private int _precio = 300;
+        private static int _precio = 300;
         private bool _esUrgente;
 
         public int Id
