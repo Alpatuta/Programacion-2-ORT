@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Practico-2")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+959189abb81559ef3d4c13937ca6424876bb1c01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49078a22db87d06444132363da8aa3e0e418e3e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Practico-2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Practico-2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

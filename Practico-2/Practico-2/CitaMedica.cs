@@ -15,30 +15,6 @@ namespace Practico_2
         private static int _precio = 300;
         private bool _esUrgente;
 
-        public int Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
-
-        public DateTime Fecha
-        {
-            get { return _fecha; }
-            set { _fecha = value; }
-        }
-
-        public string Lugar
-        {
-            get { return _lugar; }
-            set { _lugar = value; }
-        }
-
-        public string Cedula
-        {
-            get { return _cedula; }
-            set { _cedula = value; }
-        }
-
         public string EsUrgente
         {
             get
@@ -65,17 +41,14 @@ namespace Practico_2
 
         private int CalcularCitaMedica()
         {
+            int precio = _precio;
 
             if (_esUrgente)
             {
-                _precio *= 2;
-            }
-            else
-            {
-                _precio *= 1;
+                precio *= 2;
             }
 
-            return _precio;
+            return precio;
         }
 
         public string MostrarDatos()
