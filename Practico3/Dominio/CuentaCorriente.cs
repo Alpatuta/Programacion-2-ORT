@@ -11,6 +11,7 @@ namespace Practico3
         private int _nroCuenta;
         private string _tipoMoneda;
         private double _saldoActual;
+        private int _cantDepositos;
 
         public CuentaCorriente(int nroCuenta, string tipoMoneda)
         {
@@ -29,15 +30,28 @@ namespace Practico3
         
         public void Deposito(double monto, string moneda)
         {
-            if (moneda == _tipoMoneda)
+            if (moneda.ToLower() == _tipoMoneda.ToLower())
             {
+                if (_cantDepositos > 3)
+                {
+                    monto -= 100;
+                }
+
                 _saldoActual += monto;
+                _cantDepositos++;
             }
         }
 
-        private void Retiro(int monto)
+        public void Retiro(double monto)
         {
-
+            if (monto > _saldoActual)
+            {
+                throw new Exception("Saldo insuficiente");
+            }
+            else
+            {
+                _saldoActual -= monto;
+            }
         }
     }
 }
