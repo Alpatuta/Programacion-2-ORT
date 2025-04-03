@@ -1,4 +1,5 @@
-﻿namespace Practico3
+﻿using Dominio;
+namespace Practico3
 {
     internal class Program
     {
@@ -7,6 +8,8 @@
             //CrearCliente();
             //AgregarDepositoACuenta();
             //RetirarMonto();
+            //CrearDeporte();
+            CrearSocio();
         }
 
         //Ejercicio 1
@@ -90,5 +93,65 @@
 
         //Ejercicio 3
 
+        private static Sistema miSistema = new Sistema();
+        static void CrearDeporte()
+        {
+            try
+            {
+                Console.WriteLine("Ingrese nombre del deporte");
+                string nombre = Console.ReadLine();
+
+                Console.WriteLine("Ingrese 1 si el deporte es grupal");
+                int.TryParse(Console.ReadLine(), out int tipoDeporte);
+
+                Console.WriteLine("Ingrese cantidad de profesores");
+                int.TryParse(Console.ReadLine(), out int cantProfesores);
+
+                bool esGrupal = false;
+
+                if (tipoDeporte == 1)
+                {
+                    esGrupal = true;
+                }
+
+                Deporte deporte = new Deporte(nombre, esGrupal, cantProfesores);
+                miSistema.AgregarDeporte(deporte);
+                Console.WriteLine("Deporte agregado correctamente");
+
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void CrearSocio()
+        {
+            try
+            {
+                Console.WriteLine("Ingrese su nombre");
+                string nombre = Console.ReadLine();
+
+                Console.WriteLine("Ingrese su apellido");
+                string apellido = Console.ReadLine();
+
+                Console.WriteLine("Ingrese su fecha de nacimiento");
+                DateTime.TryParse(Console.ReadLine(), out DateTime fechaNacimiento);
+
+                Console.WriteLine("Ingrese su cedula");
+                string cedula = Console.ReadLine();
+
+                Socio socio = new Socio(nombre, apellido,fechaNacimiento, cedula);
+
+                miSistema.AgregarSocio(socio);
+
+                Console.WriteLine("Socio creado correctamente");
+
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

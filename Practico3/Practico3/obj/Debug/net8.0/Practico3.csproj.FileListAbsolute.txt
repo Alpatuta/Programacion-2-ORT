@@ -18,3 +18,7 @@ D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\refint\Practico3.dll
 D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\Practico3.pdb
 D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\Practico3.genruntimeconfig.cache
 D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\ref\Practico3.dll
+D:\Prog-2\Practico3\Practico3\bin\Debug\net8.0\Dominio.dll
+D:\Prog-2\Practico3\Practico3\bin\Debug\net8.0\Dominio.pdb
+D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\Practico3.csproj.AssemblyReference.cache
+D:\Prog-2\Practico3\Practico3\obj\Debug\net8.0\Practico3.csproj.Up2Date
