@@ -35,7 +35,7 @@ namespace Practico3
             }
         }
 
-        private void Retiro(int monto)
+        private void Retiro(double monto)
         {
 
         }
