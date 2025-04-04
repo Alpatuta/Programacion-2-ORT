@@ -9,7 +9,7 @@ namespace Practico3
             //AgregarDepositoACuenta();
             //RetirarMonto();
             //CrearDeporte();
-            //CrearSocio();
+            //CrearSocio(); 
             Ejercicio2();
         }
 
