@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "FTkU7RbykZDR1bmS6Dm8scoseJNLg0ZNltQVc+DqFcgY9J0h6ZtCA8U27O1YjhaGNY+4spZYPNe0AsnESRTUqA==",
+  "dgSpecHash": "9JR/DE6F4w3Xzkk4hioNQmpwOOJTjNi5o7ZCDXMb3Q3s7PDtlOCcwQp3jxjTldAavPKr7tiQKJ7q70CiMTkPhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\Practico3\\Practico3\\Practico3.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\Practico3\\Practico3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

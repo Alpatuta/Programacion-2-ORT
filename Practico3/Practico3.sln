@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico3", "Practico3\Practico3.csproj", "{DE4C1DAA-D5A8-4490-864A-9B906D091BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{5F28EE73-997C-48C9-BE2B-0FE5CFFB6CB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DE4C1DAA-D5A8-4490-864A-9B906D091BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE4C1DAA-D5A8-4490-864A-9B906D091BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE4C1DAA-D5A8-4490-864A-9B906D091BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F28EE73-997C-48C9-BE2B-0FE5CFFB6CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F28EE73-997C-48C9-BE2B-0FE5CFFB6CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F28EE73-997C-48C9-BE2B-0FE5CFFB6CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F28EE73-997C-48C9-BE2B-0FE5CFFB6CB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

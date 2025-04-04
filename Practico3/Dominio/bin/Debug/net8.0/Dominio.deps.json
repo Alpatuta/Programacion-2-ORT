@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Practico3/1.0.0": {
-        "dependencies": {
-          "Dominio": "1.0.0"
-        },
-        "runtime": {
-          "Practico3.dll": {}
-        }
-      },
       "Dominio/1.0.0": {
         "runtime": {
           "Dominio.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Practico3/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,

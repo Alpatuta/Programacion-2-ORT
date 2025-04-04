@@ -13,6 +13,12 @@ namespace Practico3
         private string _documento;
         private CuentaCorriente _cuentaCorriente;
 
+        public string Documento
+        {
+            get { return _documento; }
+       
+        }
+
         public Cliente(string nombre, string apellido, string documento, int nroCuenta, string tipoMoneda)
         {
             _nombre = nombre;
@@ -24,6 +30,11 @@ namespace Practico3
         public void DespositarEnCuenta(double monto, string tipoMoneda)
         {
             _cuentaCorriente.Deposito(monto, tipoMoneda);
+        }
+
+        public void RetirarMontoCuenta(double monto)
+        {
+            _cuentaCorriente.Retiro(monto);
         }
      
      }
