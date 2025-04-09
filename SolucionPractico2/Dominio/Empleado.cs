@@ -71,7 +71,7 @@ namespace Dominio
 
         private int CalcularLicencia()
         {
-
+            
         }
     }
 }

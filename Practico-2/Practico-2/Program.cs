@@ -31,6 +31,8 @@
                 exoneraImpuestos = true;
             }
 
+
+
             Console.WriteLine("Ingrese su año");
             int.TryParse(Console.ReadLine(), out int anio);
 
