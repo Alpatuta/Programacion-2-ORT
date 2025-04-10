@@ -7,12 +7,49 @@ namespace EjercicioTeoricoEmpleados
         private static Sistema miSistema=new Sistema();
         static void Main(string[] args)
         {
-            /* CrearCategoria();
-             CrearCategoria();
-             MostrarCategorias();
-             MostrarDatosCategoriasDos();*/
-            CrearEmpleadoMensual();
-            CrearEmpleadoJornalero();
+
+            int opcion = -1;
+
+             while (opcion != 0)
+             {
+                Menu();
+                Console.WriteLine("Ingrese opcion de menú");
+                int.TryParse(Console.ReadLine(), out opcion);
+                EvaluarOpcion(opcion);
+             }
+            Console.ReadKey();
+
+        }
+
+        static void Menu()
+        {
+            Console.WriteLine("1- Alta Categoria");
+            Console.WriteLine("2- Alta Mensula");
+            Console.WriteLine("3- Alta Jornalero");
+            Console.WriteLine("4- Alta Cargo");
+            Console.WriteLine("0- Salir");
+        }
+
+        static void EvaluarOpcion(int opcion)
+        {
+            switch (opcion)
+            {
+                case 1:
+                    CrearCategoria();
+                    break;
+                case 2:
+                    CrearEmpleadoMensual();
+                    break;
+                case 3:
+                    CrearEmpleadoJornalero();
+                    break;
+                case 4:
+                    CrearCargo();
+                    break;
+                default:
+                    Console.Clear();
+                    break;
+            }
         }
         static void CrearCategoria()
         {
@@ -62,6 +99,29 @@ namespace EjercicioTeoricoEmpleados
             double valorHora = 1000;
             Jornalero jornalero = new Jornalero(nombre, apellido, documento, tipoDocumento, fechaIngreso, fechaAntiguedad, valorHora);
             miSistema.AltaEmpleadoJornalero(jornalero);
+        }
+
+        static void CrearCargo()
+        {
+            try
+            {
+                Console.WriteLine("Ingrese la descripcion");
+                string descripcion = Console.ReadLine();
+
+                if (!string.IsNullOrEmpty(descripcion))
+                {
+                    Cargo cargo = new Cargo(descripcion);
+                    miSistema.AltaCargo(cargo);
+                    Console.WriteLine("Cargo creado con exito");
+                }
+                else
+                {
+                    Console.WriteLine("La descripcion es obligatoria");
+                }
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

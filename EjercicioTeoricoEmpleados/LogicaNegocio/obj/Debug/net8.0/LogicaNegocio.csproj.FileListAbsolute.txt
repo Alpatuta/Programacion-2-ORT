@@ -9,3 +9,15 @@ D:\Liliana\Programacion2\Semana5\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Deb
 D:\Liliana\Programacion2\Semana5\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\refint\LogicaNegocio.dll
 D:\Liliana\Programacion2\Semana5\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.pdb
 D:\Liliana\Programacion2\Semana5\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\ref\LogicaNegocio.dll
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.deps.json
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.dll
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.pdb
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfoInputs.cache
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfo.cs
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.sourcelink.json
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.dll
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\refint\LogicaNegocio.dll
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.pdb
+D:\Programacion-2\EjercicioTeoricoEmpleados\LogicaNegocio\obj\Debug\net8.0\ref\LogicaNegocio.dll

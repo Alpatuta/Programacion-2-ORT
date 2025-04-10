@@ -10,11 +10,13 @@ namespace LogicaNegocio
     {
         private int _codigo;
         private string _descripcion;
+      //private Cargo _cargo; 
 
-        public Categoria(int codigo, string descripcion)
+        public Categoria(int codigo, string descripcion /*Cargo cargo*/)
         {
             _codigo = codigo;
             _descripcion = descripcion;
+          //_cargo = cargo;
         }   
 
         public void Validar()
