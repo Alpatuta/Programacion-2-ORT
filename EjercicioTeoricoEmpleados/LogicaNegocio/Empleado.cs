@@ -100,7 +100,7 @@ namespace LogicaNegocio
 
         public abstract double SalarioEmpleado(int mes);
 
-        protected double CalcularSalariofinal(double salario)
+        protected double CalcularSalariofinal(double salarioACalcular)
         {
             double salario = 0;
 

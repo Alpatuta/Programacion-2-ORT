@@ -248,7 +248,7 @@ namespace LogicaNegocio
             
             foreach(Empleado empleado in _empleados)
             {
-                if(empleado.SalarioEmpleado(mes) > importe)
+                if (empleado.SalarioEmpleado(mes) > importe)
                 {
                     listaEmpleados.Add(empleado);
                 }
@@ -256,5 +256,7 @@ namespace LogicaNegocio
 
             return listaEmpleados;
         }
+
+       
     }
 }

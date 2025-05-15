@@ -46,7 +46,7 @@ namespace LogicaNegocio
             return _valorHora * CantidadHorasMes(mes);
         }
 
-        public int CantidadHorasMes(int mes)
+        private int CantidadHorasMes(int mes)
         {
             int cantHoras = 0;
 
@@ -60,5 +60,6 @@ namespace LogicaNegocio
 
             return cantHoras;
         }
+
     }
 }
