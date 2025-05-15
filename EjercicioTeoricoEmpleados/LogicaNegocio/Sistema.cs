@@ -16,7 +16,18 @@ namespace LogicaNegocio
         {
             get { return _categorias; }
         }
-
+        public List<Cargo> Cargos
+        {
+            get { return _cargos; }
+        }
+        public List<Empleado> Empleados
+        {
+            get { return _empleados; }
+        }
+        /// <summary>
+        /// Permite agregar una nueva categoria a la lista de categorias
+        /// </summary>
+        /// <param name="categoria"></param>
         public void AltaCategoria(Categoria categoria)
         {
             categoria.Validar();
@@ -25,6 +36,11 @@ namespace LogicaNegocio
                 _categorias.Add(categoria);
             }
         }
+        /// <summary>
+        /// Permite devolver como cadena de texto los datos de cada categoria.
+        /// Se utiliza desde Program
+        /// </summary>
+        /// <returns></returns>
         public string DatosCategorias()
         {
             string datosCategorias = "";
@@ -34,7 +50,10 @@ namespace LogicaNegocio
             }
             return datosCategorias; 
         }
-
+        /// <summary>
+        /// Permite agregar un nuevo empleado mensual a lista de empleados 
+        /// </summary>
+        /// <param name="mensual"></param>
         public void AltaEmpleadoMensual(Mensual mensual)
         {
             mensual.Validar();
@@ -43,6 +62,10 @@ namespace LogicaNegocio
                 _empleados.Add(mensual);
             }
         }
+        /// <summary>
+        /// Permite agregar un empleado de tipo jornalero a la lista de empleados 
+        /// </summary>
+        /// <param name="jornalero"></param>
         public void AltaEmpleadoJornalero(Jornalero jornalero)
         {
             jornalero.Validar();
@@ -52,17 +75,186 @@ namespace LogicaNegocio
             }
         }
 
+        /// <summary>
+        /// Permite agregar un cargo a la lista de cargos
+        /// </summary>
+        /// <param name="cargo"></param>
+        /// <exception cref="Exception"></exception>
         public void AltaCargo(Cargo cargo)
         {
-            cargo.ValidarCargo();
-            if (!_cargos.Contains(cargo))
-            {
+            cargo.Validar();
+            if(!_cargos.Contains(cargo)){
                 _cargos.Add(cargo);
             }
             else
             {
-                throw new Exception("Ya existe un cargo con esa descripcion");
+                throw new Exception("Ya existe un cargo con esa descripción");
             }
+        }
+
+        /// <summary>
+        /// Permite agregar un cargo a una categoria
+        /// Esto se hace dentro del metodo que permite agregar un cargo ya que existe una restriccion que 
+        /// indica que los cargos tienen que tener obligatoriamente una categoria
+        /// </summary>
+        /// <param name="codCategoria"></param>
+        /// <param name="cargo"></param>
+        /// <exception cref="Exception"></exception>
+        public void AsignarCargoACategoria(int codCategoria,Cargo cargo)
+        {
+            //Buscar la categoria que se corresponde a ese codigo
+            //Si la encuentro , le voy a pedir a la categoria que agregue ese cargo 
+            //a su lista
+            Categoria categoriaBuscada = BuscarCategoria(codCategoria);
+            if (categoriaBuscada != null)
+            {
+                categoriaBuscada.AgregarCargo(cargo);
+            }
+            else
+            {
+                throw new Exception("No existe la categorìa con ese código");
+            }
+        }
+        /// <summary>
+        /// Permite buscar una categoria dentro de la lista de categorias
+        /// La busqueda se hace por codigo de categoria
+        /// </summary>
+        /// <param name="codCategoria"></param>
+        /// <returns></returns>
+        private Categoria BuscarCategoria(int codCategoria)
+        {
+            Categoria categoriaBuscada = null;
+            int i = 0;
+            while(i<_categorias.Count  && categoriaBuscada == null)
+            {
+                if (_categorias[i].Codigo == codCategoria)
+                {
+                    categoriaBuscada = _categorias[i];
+                }
+                i++;
+            }
+            return categoriaBuscada;
+        }
+        /// <summary>
+        /// Permite obtener los cargos que pertenecen a la categoria de la cual se recibe el codigo por parametro
+        /// </summary>
+        /// <param name="codCategoria"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<Cargo>CargosDeCategoria(int codCategoria)
+        {
+            Categoria categoriaBuscada = BuscarCategoria(codCategoria);
+
+            if (categoriaBuscada != null)
+            {
+                return categoriaBuscada.Cargos;
+            }
+            else
+            {
+                throw new Exception("No existe una categoria con ese còdigo");
+            }
+        }
+        /// <summary>
+        /// Permite obtener los empleados cuya fecha de ingreso este comprendida en las fechas recibidas 
+        /// </summary>
+        /// <param name="fechaDesde"></param>
+        /// <param name="fechaHasta"></param>
+        /// <returns></returns>
+        public List<Empleado>EmpleadosFiltradoFechaIngreso(DateTime fechaDesde,
+            DateTime fechaHasta)
+        {
+            List<Empleado> empleadosFiltrados = new List<Empleado>();
+            foreach(Empleado empleado in _empleados)
+            {
+                if(empleado.FechaIngreso<=fechaHasta && empleado.FechaIngreso >= fechaDesde)
+                {
+                    empleadosFiltrados.Add(empleado);
+                }
+            }
+            return empleadosFiltrados;
+        }
+        /// <summary>
+        /// Permite asignar un cargo a un empleado 
+        /// </summary>
+        /// <param name="codCargo"></param>
+        /// <param name="documentoEmpleado"></param>
+        /// <exception cref="Exception"></exception>
+        public void AsignarCargoAEmpleado(int codCargo, string documentoEmpleado)
+        {
+            Cargo cargo = BuscarCargo(codCargo);
+            if (cargo != null)
+            {
+                Empleado empleado = BuscarEmpleado(documentoEmpleado);
+                if(empleado != null)
+                {
+                    empleado.AgregarCargo(cargo);
+                }
+                else
+                {
+                    throw new Exception("No existe empleado con ese documento");
+                }
+                
+            }
+            else
+            {
+                 throw new Exception("No existe cargo con el codigo recibido");
+            }
+           
+        }
+        /// <summary>
+        /// Permite buscar un cargo dentro de la lista de cargos
+        /// La busqueda se hace por codigo de cargo 
+        /// </summary>
+        /// <param name="codCargo"></param>
+        /// <returns></returns>
+        public Cargo BuscarCargo(int codCargo)
+        {
+            int i = 0;
+            Cargo cargoBuscado = null;
+            while (i<_cargos.Count && cargoBuscado == null)
+            {
+                if (_cargos[i].Codigo == codCargo)
+                {
+                    cargoBuscado = _cargos[i];
+                }
+                i++;
+            }
+            return cargoBuscado;
+        }
+        /// <summary>
+        /// Permite buscar un empleado dentro de la lista de empleados
+        /// Para la busqueda se usa el documento 
+        /// </summary>
+        /// <param name="documento"></param>
+        /// <returns></returns>
+        public Empleado BuscarEmpleado(string documento)
+        {
+            int i = 0;
+            Empleado empleadoBuscado= null;
+            while(i<_empleados.Count && empleadoBuscado == null)
+            {
+                if (_empleados[i].Documento.Trim().ToUpper() == documento.Trim().ToUpper())
+                {
+                    empleadoBuscado= _empleados[i];
+                }
+                i++;
+            }
+            return empleadoBuscado;
+        }
+
+        public List<Empleado> SalarioEmpleadosPorMes(double importe, int mes)
+        {
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            
+            foreach(Empleado empleado in _empleados)
+            {
+                if(empleado.SalarioEmpleado(mes) > importe)
+                {
+                    listaEmpleados.Add(empleado);
+                }
+            }
+
+            return listaEmpleados;
         }
     }
 }

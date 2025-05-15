@@ -10,45 +10,54 @@ namespace LogicaNegocio
     {
         private int _codigo;
         private string _descripcion;
-        private static int s_ultimoCodigo = 1;
+        private static int s_ultId=1;
 
-        public Cargo(string descripcion)
+        public string Descripcion
         {
-            _descripcion = descripcion;
-            _codigo = s_ultimoCodigo ++;
-
+            get { return _descripcion; }
+        }
+        public int Codigo
+        {
+            get { return _codigo; }
         }
 
-        public void ValidarCargo()
+        public Cargo(string descripcion)
+        {          
+            _descripcion = descripcion;
+            _codigo = s_ultId++;
+        }
+
+        public void Validar()
         {
             if (string.IsNullOrEmpty(_descripcion))
             {
-                throw new Exception("La descripcion no puede ser vacia");
+                throw new Exception("La descripción es obligatoria");
             }
         }
-
+        /// <summary>
+        /// Se usa desde el contains
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object? obj)
         {
             bool sonIguales = false;
             if (obj != null && obj is Cargo)
             {
                 Cargo cargo = (Cargo)obj;
-                if (cargo._descripcion.Trim().ToLower() == _descripcion.Trim().ToLower())
-                {
-                    sonIguales = true;
-                }
+                sonIguales = _descripcion.Trim().ToUpper() == cargo._descripcion.Trim().ToUpper();
             }
-
             return sonIguales;
         }
-
+        /// <summary>
+        /// Se utiliza desde Program cuando se imprimen los datos de los cargos 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            return $"Codigo cargo: {_codigo} \n" + 
-                   $"Descripcion cargo: {_descripcion}";
+            return _codigo + " - " + _descripcion;  
         }
 
-    }
 
-   
+    }
 }

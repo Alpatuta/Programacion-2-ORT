@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("EjercicioTeoricoEmpleados")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eab400dacf8ab302e0e6e7040bbd6a376ffee7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EjercicioTeoricoEmpleados")]
