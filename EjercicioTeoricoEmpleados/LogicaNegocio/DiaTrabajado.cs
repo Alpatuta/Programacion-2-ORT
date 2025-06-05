@@ -10,5 +10,11 @@ namespace LogicaNegocio
     {
         private DateTime _fecha;
         private int _cantHoras;
+
+        public DiaTrabajado(int cantHoras)
+        {
+            _fecha = DateTime.Now;
+            _cantHoras = cantHoras;
+        }
     }
 }

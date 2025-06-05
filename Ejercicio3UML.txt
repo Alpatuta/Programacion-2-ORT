@@ -1,0 +1,29 @@
+ 2.Indicar cómo calcular el promedio de puntaje de una competencia. Incluya los métodos con sus firmas correspondientes en el diagrama.
+
+Competencia.cs
+
+public double CalcularPromedioCompetencia()
+{
+	
+	double puntajeTotal = 0;
+
+	foreach(Participacion participante in _participaciones)
+	{
+		puntajeTotal += participante.PuntajeObtenido;
+	}
+
+	return puntajeTotal / _participaciones.Count;
+}
+
+3.	Indicar los métodos necesarios para obtener los nombres de todos los alumnos que participaron en competencias de un liceo específico. Incluya los métodos con sus firmas correspondientes en el diagrama.
+
+
+Sistema.cs
+
+
+
+
+
+	
+
+

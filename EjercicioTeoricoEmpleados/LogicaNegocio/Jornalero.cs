@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace LogicaNegocio
 {
+    //Los dos puntos en la definicion de la clase indican herencia
     public class Jornalero:Empleado
     {
         private double _valorHora;
         private List<DiaTrabajado> _diasTrabajados = new List<DiaTrabajado>();
 
+        /// <summary>
+        /// Los dos puntos base indican que se llama al constructor de la clase padre en la relacion de herencia
+        /// En este ejemplo la clase base es Empleado
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="documento"></param>
+        /// <param name="tipoDocumento"></param>
+        /// <param name="fechaIngreso"></param>
+        /// <param name="fechaAntiguedad"></param>
+        /// <param name="valorHora"></param>
         public Jornalero(string nombre, string apellido, string documento, TipoDocumento tipoDocumento,
             DateTime fechaIngreso,DateTime fechaAntiguedad,double valorHora):
             base(nombre, apellido, documento, tipoDocumento, fechaIngreso, fechaAntiguedad)
@@ -19,6 +31,7 @@ namespace LogicaNegocio
         }
         public void Validar()
         {
+            //Se llama al metodo Validar de Empleado 
             base.Validar();
             if (_valorHora <= 0)
             {
