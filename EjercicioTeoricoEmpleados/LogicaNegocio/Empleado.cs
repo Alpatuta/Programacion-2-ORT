@@ -16,6 +16,7 @@ namespace LogicaNegocio
         private TipoDocumento _tipoDocumento;
         private string _apellido;       
         private List<FechaCargo>_cargos=new List<FechaCargo>();
+        private static int s_porcentajeBonificacion = 10;
 
         public string Documento
         {
@@ -95,6 +96,30 @@ namespace LogicaNegocio
             }
            
         }
+<<<<<<< HEAD
+=======
+
+
+        public abstract double SalarioEmpleado(int mes);
+
+        protected double CalcularSalariofinal(double salarioACalcular)
+        {
+            double salario = 0;
+
+            if(DateTime.Now.Year - _fechaAntiguedad.Year > 5)
+            {
+                salario = salario + (salario + 100 / s_porcentajeBonificacion);
+            }
+
+            if (_cargos.Count > 1)
+            {
+                salario = salario * 1.2;
+            }
+
+            return salario;
+        }
+
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
         /// <summary>
         /// Se utiliza desde program para mostrar los datos del empleado 
         /// </summary>

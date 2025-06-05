@@ -1404,6 +1404,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Formats.Asn1/8.0.1": {
         "runtime": {
           "lib/net8.0/System.Formats.Asn1.dll": {
@@ -1412,6 +1413,9 @@
           }
         }
       },
+=======
+      "System.Formats.Asn1/8.0.1": {},
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
       "System.IO.Pipelines/7.0.0": {},
       "System.Reflection.Metadata/7.0.0": {
         "dependencies": {
@@ -1493,7 +1497,14 @@
       },
       "LogicaNegocio/1.0.0": {
         "runtime": {
+<<<<<<< HEAD
           "LogicaNegocio.dll": {}
+=======
+          "LogicaNegocio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
         }
       }
     }

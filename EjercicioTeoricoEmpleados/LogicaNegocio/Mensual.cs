@@ -26,5 +26,10 @@ namespace LogicaNegocio
             }
           
         }
+
+        public override double SalarioEmpleado(int mes) 
+        {
+            return _sueldo;
+        }
     }
 }

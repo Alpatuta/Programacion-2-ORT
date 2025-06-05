@@ -12,6 +12,15 @@ namespace LogicaNegocio
         private double _valorHora;
         private List<DiaTrabajado> _diasTrabajados = new List<DiaTrabajado>();
 
+<<<<<<< HEAD
+=======
+        public double ValorHora
+        {
+            get { return _valorHora; }
+            set { _valorHora = value; }
+        }
+
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
         /// <summary>
         /// Los dos puntos base indican que se llama al constructor de la clase padre en la relacion de herencia
         /// En este ejemplo la clase base es Empleado

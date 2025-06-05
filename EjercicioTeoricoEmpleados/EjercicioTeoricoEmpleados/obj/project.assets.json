@@ -32,11 +32,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
       "projectName": "EjercicioTeoricoEmpleados",
       "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
+      "projectName": "EjercicioTeoricoEmpleados",
+      "projectPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
+      "packagesPath": "C:\\Users\\alumnoFI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\obj\\",
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +61,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj"
+=======
+            "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj": {
+              "projectPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj"
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
             }
           }
         }

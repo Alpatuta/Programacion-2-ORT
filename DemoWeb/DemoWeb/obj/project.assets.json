@@ -5582,11 +5582,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\alumnoFI\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
       "projectName": "DemoWeb",
       "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
@@ -5595,6 +5601,20 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
+      "projectName": "DemoWeb",
+      "projectPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
+      "packagesPath": "C:\\Users\\alumnoFI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\alumnoFI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5608,8 +5628,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj"
+=======
+            "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {
+              "projectPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj"
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
             }
           }
         }
@@ -5618,7 +5643,17 @@
         "warnAsError": [
           "NU1605"
         ]
+<<<<<<< HEAD
       }
+=======
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
     },
     "frameworks": {
       "net8.0": {
@@ -5648,7 +5683,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
       }
     }
   }

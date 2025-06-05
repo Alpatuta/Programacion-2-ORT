@@ -29,6 +29,7 @@ namespace LogicaNegocio
         {
             _valorHora = valorHora;
         }
+
         public void Validar()
         {
             //Se llama al metodo Validar de Empleado 
@@ -39,5 +40,26 @@ namespace LogicaNegocio
             }
          
         }
+
+        public override double SalarioEmpleado(int mes)
+        {
+            return _valorHora * CantidadHorasMes(mes);
+        }
+
+        private int CantidadHorasMes(int mes)
+        {
+            int cantHoras = 0;
+
+            foreach(DiaTrabajado diaTrabajado in _diasTrabajados)
+            {
+                if (diaTrabajado.Fecha.Month == mes)
+                {
+                    cantHoras += diaTrabajado.CantidadHoras;
+                }
+            }
+
+            return cantHoras;
+        }
+
     }
 }

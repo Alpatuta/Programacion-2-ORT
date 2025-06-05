@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "MyG7KIMbGyI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj",
+=======
+  "dgSpecHash": "SGVN2TtvGkE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\LogicaNegocio\\LogicaNegocio.csproj",
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
   "expectedPackageFiles": [],
   "logs": []
 }

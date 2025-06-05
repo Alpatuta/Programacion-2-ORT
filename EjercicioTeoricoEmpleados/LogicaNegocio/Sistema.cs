@@ -241,5 +241,25 @@ namespace LogicaNegocio
             }
             return empleadoBuscado;
         }
+<<<<<<< HEAD
+=======
+
+        public List<Empleado> SalarioEmpleadosPorMes(double importe, int mes)
+        {
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            
+            foreach(Empleado empleado in _empleados)
+            {
+                if (empleado.SalarioEmpleado(mes) > importe)
+                {
+                    listaEmpleados.Add(empleado);
+                }
+            }
+
+            return listaEmpleados;
+        }
+
+       
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
     }
 }

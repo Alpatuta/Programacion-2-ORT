@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "MostrarEmpleados";
+}
+
+<h1>MostrarEmpleados</h1>
+
+<form method="post">
+    <label>Fecha Uno</label>
+    <input type="date" name="fechaDesde" /><br />
+
+    <label>Fecha Dos</label>
+    <input type="date" name="fechaHasta" /><br />
+
+    <input type="submit" value="Mostrar" />
+</form>
+
+<table>
+    <thead>
+        <th>Nombre</th>
+        <th>Documento</th>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+            @foreach (LogicaNegocio.Empleado empleado in Model)
+            {
+                <tr>
+                    <td>@empleado.Nombre</td>
+                    <td>@empleado.Apellido</td>
+                    <td>@empleado.Documento</td>
+                    <td>@empleado.CalcularSalario(DateTime.Now.Month)</td>
+                </tr>
+            }
+        }
+        
+    </tbody>
+</table>
+

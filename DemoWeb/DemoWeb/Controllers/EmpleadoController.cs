@@ -21,6 +21,7 @@ namespace DemoWeb.Controllers
             return View(miSistema.Empleados);
         }
 
+<<<<<<< HEAD
       public IActionResult CreateJornalero()
         {
             return View();
@@ -31,5 +32,65 @@ namespace DemoWeb.Controllers
             return View();
         }
        
+=======
+        public IActionResult CreateJornalero()
+        {
+            
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateJornalero(Jornalero jornalero)
+        {
+            try
+            {
+                miSistema.AltaEmpleadoJornalero(jornalero);
+                TempData["Mensaje"] = "Alta jornalero exitosa";
+                return RedirectToAction(nameof(Index));
+
+            }
+            catch(Exception ex)
+            {
+                ViewBag.Mensaje = ex.Message;
+            }
+            return View();
+        }
+        
+
+        public IActionResult CreateMensual()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult CreateMensual(Mensual mensual)
+        {
+            try
+            {
+                miSistema.AltaEmpleadoMensual(mensual);
+                TempData["Mensaje"] = "Alta mensual exitosa";
+                return RedirectToAction(nameof(Index));
+            }catch(Exception ex)
+            {
+                ViewBag.Mensaje = ex.Message;
+            }
+
+            return View();
+        }
+
+        public IActionResult MostrarEmpleados()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult MostrarEmpleados(DateTime fechaDesde, DateTime fechaHasta)
+        {
+            List<Empleado> listaEmpleados = miSistema.EmpleadosFiltradoFechaIngreso(fechaDesde, fechaHasta);
+
+            return View(listaEmpleados);
+        }
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
     }
 }

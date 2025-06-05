@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "RwHCN1h9XDE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
+=======
+  "dgSpecHash": "Acyh3ZK+5G8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados\\EjercicioTeoricoEmpleados.csproj",
+>>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
   "expectedPackageFiles": [],
   "logs": []
 }
