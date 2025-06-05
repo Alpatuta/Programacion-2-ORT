@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "e/KIXVMlb9jzbQ8G7M+Aw/Xfkw9mvLK6OwK+HKFNvPaitTKOg6Ep7eozZ7vj0HOBfnn241jn5mfLnyoW2n5JvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
-=======
-  "dgSpecHash": "3RNob6wOhNo=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

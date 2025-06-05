@@ -26,17 +26,16 @@ namespace LogicaNegocio
         public string Documento
         {
             get { return _documento; }
-<<<<<<< HEAD
-=======
+
+
             set { _documento = value; }
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
         }
 
         public string Nombre
         {
             get { return _nombre; }
-<<<<<<< HEAD
-=======
+
             set { _nombre = value; }
         }
 
@@ -44,13 +43,12 @@ namespace LogicaNegocio
         {
             get { return _apellido; }
             set { _apellido = value; }
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
         }
         public DateTime FechaIngreso
         {
             get { return _fechaIngreso; }
-<<<<<<< HEAD
-=======
+
             set { _fechaIngreso = value; }
         }
 
@@ -64,7 +62,7 @@ namespace LogicaNegocio
         {
             get { return _tipoDocumento; }
             set { _tipoDocumento = value; }
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
         }
         public Empleado() { }
 
@@ -77,10 +75,8 @@ namespace LogicaNegocio
             _tipoDocumento = tipoDocumento;
             _fechaAntiguedad = fechaAntiguedad;
             _fechaIngreso=fechaIngreso;
-<<<<<<< HEAD
-=======
             _mes = DateTime.Now.Month;
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
         }
         public void Validar()
         {

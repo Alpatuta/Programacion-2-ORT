@@ -21,18 +21,7 @@ namespace DemoWeb.Controllers
             return View(miSistema.Empleados);
         }
 
-<<<<<<< HEAD
-      public IActionResult CreateJornalero()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult CreateJornalero(Empleado empleado)
-        {
-            return View();
-        }
-       
-=======
+
         public IActionResult CreateJornalero()
         {
             
@@ -91,6 +80,6 @@ namespace DemoWeb.Controllers
 
             return View(listaEmpleados);
         }
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
     }
 }

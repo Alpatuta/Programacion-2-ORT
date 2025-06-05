@@ -10,15 +10,14 @@ namespace LogicaNegocio
     {
         private double _sueldo;
 
-<<<<<<< HEAD
-=======
+
         public double Sueldo
         {
             get { return _sueldo; }
             set { _sueldo = value; }
         }
 
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
         public Mensual() : base() { }
         public Mensual(string nombre, string apellido, string documento, TipoDocumento tipoDocumento,
             DateTime fechaIngreso, DateTime fechaAntiguedad,double sueldo) 

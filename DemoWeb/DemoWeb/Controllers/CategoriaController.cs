@@ -64,8 +64,7 @@ namespace DemoWeb.Controllers
             }
             return View();
         }
-<<<<<<< HEAD
-=======
+
 
         public IActionResult MostrarCargosPorCategoria()
         {
@@ -80,6 +79,6 @@ namespace DemoWeb.Controllers
 
             return View(listaCargos);
         }
->>>>>>> 3c637846d6a9bcc188974af62da68f7982eff047
+
     }
 }
