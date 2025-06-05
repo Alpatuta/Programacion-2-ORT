@@ -1,0 +1,29 @@
+﻿@model IEnumerable<LogicaNegocio.Empleado>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href="~/Empleado/CreateJornalero">Create Jornalero</a>
+<br/>   
+<a href="~/Empleado/CreateMensual">Create Mensual</a>
+<br />
+<a href="~/Empleado/MostrarEmpleados">Mostrar Empleados</a>
+
+<table>
+    <thead>
+        <th>Nombre</th>
+        <th>Documento</th>
+    </thead>
+    <tbody>
+        @foreach(LogicaNegocio.Empleado empleado in Model){
+            <tr>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Documento</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@TempData["Mensaje"]
+

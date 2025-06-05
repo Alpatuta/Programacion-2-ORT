@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href="~/Cargo/Create">Create</a>
+@if(Model!=null && Model.Count >0){
+<table>
+    <thead>
+        <th>Código</th>
+        <th>Descripción</th>
+    </thead>
+    <tbody>
+        @foreach(LogicaNegocio.Cargo cargo in Model){
+            <tr>
+                <td>@cargo.Codigo</td>
+                <td>@cargo.Descripcion</td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+else{
+    <p>No existen cargos</p>
+}
+

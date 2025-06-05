@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "CreateJornalero";
+}
+
+<h1>CreateJornalero</h1>
+<form method="post">
+    <label>Nombre:</label>
+    <input type="text" name="Nombre"/>
+    <br />
+
+    <label>Apellido:</label>
+    <input type="text" name="Apellido"/>
+    <br/>
+
+    <label>Documento:</label>
+    <input type="text" name="Documento" />
+    <br />
+
+    @{
+        string[] tiposDocumentos = Enum.GetNames(typeof(LogicaNegocio.TipoDocumento));
+
+
+    }
+    <label>Tipo documento</label>
+    <select name="tipoDocumento">
+        @for (int i = 0; i < tiposDocumentos.Length; i++)
+        {
+            <option value="@i">@tiposDocumentos[i]</option>
+        }
+    </select>
+    <br />
+
+    <label>Fecha Antiguedad:</label>
+    <input type="date" name="FechaAntiguedad" />
+    <br />
+
+    <label>Fecha Ingreso:</label>
+    <input type="date" name="FechaIngreso" />
+    <br />
+
+    <label>Valor Hora:</label>
+    <input type="number" name="ValorHora" />
+    <br />
+
+
+    <input type="submit" value="Crear" />
+</form>
+@ViewBag.Mensaje

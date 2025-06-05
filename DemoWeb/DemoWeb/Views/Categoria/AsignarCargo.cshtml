@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "AsignarCargo";
+}
+
+<h1>AsignarCargo</h1>
+<form method="post" action="~/Categoria/AsignarCargoACategoria">
+    <label>Seleccione un cargo</label>
+    <select name="Codigo">
+    @if (Model != null)
+    {
+        @foreach(LogicaNegocio.Cargo cargo in Model){
+            <option value="@cargo.Codigo">@cargo.Descripcion</option>
+        }
+        
+    }
+    </select>
+    <br />
+    <input type="submit" value="Guardar" />
+</form>
+
+

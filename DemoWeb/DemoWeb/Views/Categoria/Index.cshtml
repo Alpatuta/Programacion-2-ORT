@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href="~/Categoria/Create">Create</a>
+<br />
+<a href="~/Categoria/MostrarCargosPorCategoria">Mostrar cargos por categoria</a>
+@if(Model!=null && Model.Count>0){
+<table>
+    <thead>
+        <th>Código</th>
+        <th>Descripción</th>
+    </thead>
+    <tbody>
+@foreach(LogicaNegocio.Categoria categoria in Model){
+    <tr>
+        <td>@categoria.Codigo</td>
+        <td>@categoria.Descripcion</td>
+        <td><a href="~/Categoria/AsignarCargo/@categoria.Codigo">Agregar cargo</a></td>
+        <td><a href="~/Categoria/AsignarCargo?codigo=@categoria.Codigo">Agregar cargo</a></td>
+    </tr>
+}
+</tbody>
+</table>
+}
+else{
+    <p>No existen categorías</p>
+}
+@TempData["Mensaje"]
