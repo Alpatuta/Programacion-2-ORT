@@ -19,7 +19,7 @@ namespace LogicaNegocio
         public Tarea (string descripcion, Usuario usuarioLogueado)
         {
             Descripcion = descripcion;
-            Codigo = s_ultId ++;
+            Codigo = s_ultId++;
             UsuarioLogueado = usuarioLogueado;
         }
 

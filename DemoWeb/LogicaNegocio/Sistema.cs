@@ -340,6 +340,21 @@ namespace LogicaNegocio
             }
             return empleadoBuscado;
         }
+
+        public Usuario BuscarUsuario(string nombreUsuario)
+        {
+            int i = 0;
+            Usuario usuario = null;
+            while (i < Usuarios.Count && usuario == null)
+            {
+                if (Usuarios[i].NombreUsuario == usuario.NombreUsuario)
+                {
+                    usuario = Usuarios[i];
+                }
+            }
+
+            return usuario;
+        }
         public List<Empleado>EmpleadosSueldoMayorAImporte(double importe, int mes)
         {
             List<Empleado> empleadosSueldosMayorImporte = new List<Empleado>();
