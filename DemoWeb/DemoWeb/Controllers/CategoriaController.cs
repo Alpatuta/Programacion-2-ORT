@@ -6,10 +6,21 @@ namespace DemoWeb.Controllers
 {
     public class CategoriaController : Controller
     {
+        public Sistema miSistema = Sistema.Instancia;
         public IActionResult Index()
         {
-           
-            return View(Sistema.Instancia.Categorias);
+            if (HttpContext.Session.GetString("rol") != null)
+            {
+                if (HttpContext.Session.GetString("rol").Equals("Administrador"))
+                {
+                    return View(miSistema.Categorias);
+                }
+                else
+                {
+                    return RedirectToAction("Create", "Categoria");
+                }
+            }
+            return RedirectToAction("Login", "Home");
         }
         public IActionResult Create()
         {

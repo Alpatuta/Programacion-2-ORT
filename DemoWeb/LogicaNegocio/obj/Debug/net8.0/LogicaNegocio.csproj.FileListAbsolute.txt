@@ -83,3 +83,15 @@ C:\Users\alumnoFI\Desktop\P2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\
 C:\Users\alumnoFI\Desktop\P2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\refint\LogicaNegocio.dll
 C:\Users\alumnoFI\Desktop\P2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.pdb
 C:\Users\alumnoFI\Desktop\P2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\ref\LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.deps.json
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.pdb
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.sourcelink.json
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\refint\LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.pdb
+C:\Users\alumnoFI\Desktop\Prog-2\Programacion-2-ORT\DemoWeb\LogicaNegocio\obj\Debug\net8.0\ref\LogicaNegocio.dll

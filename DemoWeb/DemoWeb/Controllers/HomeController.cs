@@ -1,32 +1,55 @@
 using System.Diagnostics;
 using DemoWeb.Models;
+using LogicaNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoWeb.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+
+        public IActionResult Login(Usuario usuario)
         {
+            try
+            {
+                string rol = Sistema.Instancia.Login(usuario.NombreUsuario, usuario.Contrasenia);
+                if (!string.IsNullOrEmpty(rol))
+                {
+                    HttpContext.Session.SetString("rol", rol);
+                    if (rol.Equals("Administrador"))
+                    {
+                        return RedirectToAction("Create", "Cargo");
+                    }
+                    if (rol.Equals("Gerente"))
+                    {
+                        return RedirectToAction("MostrarEmpleados", "Empleado");
+                    }
+                    
+                }
+                else
+                {
+                    ViewBag.Mensaje = "Crendenciales incorrectas";
+                }
+
+            }
+            catch(Exception ex)
+            {
+                ViewBag.Mensaje = ex.Message;
+            }
+
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Logout()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
     }
 }

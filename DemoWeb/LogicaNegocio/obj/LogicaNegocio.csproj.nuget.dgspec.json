@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {}
+    "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {
+    "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
         "projectName": "LogicaNegocio",
-        "projectPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
+        "projectPath": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\LogicaNegocio.csproj",
         "packagesPath": "C:\\Users\\alumnoFI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\obj\\",
+        "outputPath": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\LogicaNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VxHovUANvqA=",
+  "dgSpecHash": "yMGW5c4tDIU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alumnoFI\\Desktop\\P2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
+  "projectFilePath": "C:\\Users\\alumnoFI\\Desktop\\Prog-2\\Programacion-2-ORT\\DemoWeb\\DemoWeb\\DemoWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alumnoFI\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\alumnoFI\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

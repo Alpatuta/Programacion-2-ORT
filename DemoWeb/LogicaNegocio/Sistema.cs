@@ -12,6 +12,8 @@ namespace LogicaNegocio
         private List<Categoria>_categorias = new List<Categoria>();
         private List<Empleado>_empleados = new List<Empleado>();
         private List<Cargo> _cargos = new List<Cargo>();
+        private List<Usuario> _usuarios = new List<Usuario>();
+        private List<Tarea> _tareas = new List<Tarea>();
         //Primer punto de patron singleton 
         private static Sistema _instancia;
 
@@ -41,12 +43,23 @@ namespace LogicaNegocio
             get { return _empleados; }
         }
 
+        public List<Usuario> Usuarios
+        {
+            get { return _usuarios; }
+        }
+
+        public List<Tarea> Tareas
+        {
+            get { return _tareas; }
+        }
+
         //Tercer punto de patron singleton 
         private Sistema()
         {
             PrecargarJornalero();
             PrecargarCargos();
             PrecargarCategorias();
+            PrecargaUsuario();
         }
         private void PrecargarCargos()
         {
@@ -64,6 +77,18 @@ namespace LogicaNegocio
             AltaEmpleadoMensual(new Mensual("Joaquin", "Sosa", "2345678", TipoDocumento.Cedula, new DateTime(2022, 08, 08), new DateTime(2022, 08, 08), 50000));
             
         }
+
+        private void PrecargaUsuario()
+        {
+            AltaUsuario(new Usuario("Federico", "1234", "Administrador"));
+            AltaUsuario(new Usuario("Luca", "2345", "Gerente"));
+        }
+
+        private void PrecargaTarea()
+        {
+            AltaTarea(new Tarea("Tarea 1", BuscarUsuario("Federico")));
+
+        }
         /// <summary>
         /// Permite agregar una nueva categoria a la lista de categorias
         /// </summary>
@@ -71,9 +96,9 @@ namespace LogicaNegocio
         public void AltaCategoria(Categoria categoria)
         {
             categoria.Validar();
-            if (!_categorias.Contains(categoria))
+            if (!Categorias.Contains(categoria))
             {
-                _categorias.Add(categoria);
+                Categorias.Add(categoria);
             }
             else
             {
@@ -101,9 +126,9 @@ namespace LogicaNegocio
         public void AltaEmpleadoMensual(Mensual mensual)
         {
             mensual.Validar();
-            if (!_empleados.Contains(mensual))
+            if (!Empleados.Contains(mensual))
             {
-                _empleados.Add(mensual);
+                Empleados.Add(mensual);
             }
         }
         /// <summary>
@@ -113,9 +138,9 @@ namespace LogicaNegocio
         public void AltaEmpleadoJornalero(Jornalero jornalero)
         {
             jornalero.Validar();
-            if (!_empleados.Contains(jornalero))
+            if (!Empleados.Contains(jornalero))
             {
-                _empleados.Add(jornalero);
+                Empleados.Add(jornalero);
             }
         }
 
@@ -127,12 +152,37 @@ namespace LogicaNegocio
         public void AltaCargo(Cargo cargo)
         {
             cargo.Validar();
-            if(!_cargos.Contains(cargo)){
-                _cargos.Add(cargo);
+            if(!Cargos.Contains(cargo)){
+                Cargos.Add(cargo);
             }
             else
             {
                 throw new Exception("Ya existe un cargo con esa descripción");
+            }
+        }
+
+        public void AltaUsuario(Usuario usuario)
+        {
+            usuario.Validar();
+            if (!Usuarios.Contains(usuario))
+            {
+                Usuarios.Add(usuario);
+            }
+            else
+            {
+                throw new Exception("Ya existe una cuenta con ese nombre de usuario");
+            }
+        }
+
+        public void AltaTarea(Tarea tarea)
+        {
+            if (!Tareas.Contains(tarea))
+            {
+                Tareas.Add(tarea);
+            }
+            else
+            {
+                throw new Exception("Ya existe una tarea con ese usuario");
             }
         }
 
@@ -303,6 +353,24 @@ namespace LogicaNegocio
             }
             empleadosSueldosMayorImporte.Sort();
             return empleadosSueldosMayorImporte;
+        }
+
+        public string Login(string nombreUsario, string contrasenia)
+        {
+            bool existe = false;
+            string rol = "";
+            int i = 0;
+            while (i < Usuarios.Count && !existe)
+            {
+                if (Usuarios[i].NombreUsuario.Equals(nombreUsario)
+                    && Usuarios[i].Contrasenia.Equals(contrasenia))
+                {
+                    existe = true;
+                    rol = Usuarios[i].Rol;
+                }
+                i++;
+            }
+            return rol;
         }
     }
 }
